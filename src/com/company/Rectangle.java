@@ -14,15 +14,20 @@ public class Rectangle {
     private int height;
     private int width;
 
+    public Rectangle() {
+    }
+
+    public Rectangle(int height, int width) {
+        this.height = height;
+        this.width = width;
+    }
 
     public double calculatePerimeter() {
-        double perimeter = 2 * (height + width);
-        return perimeter;
+        return 2 * (height + width);
     }
 
     public double calculateArea() {
-        double area = height * width;
-        return area;
+        return height * width;
     }
 
 
