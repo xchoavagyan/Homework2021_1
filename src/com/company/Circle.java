@@ -12,22 +12,24 @@ public class Circle {
 
     private int radius;
 
+    public Circle(int radius) {
+        this.radius = radius;
+    }
+
+    public Circle() {
+    }
 
     public double calculatePerimeter() {
-        double perimeter = 2 * radius * Math.PI;
-        return perimeter;
+        return 2 * radius * Math.PI;
     }
 
     public double calculateArea() {
-        double area = Math.PI * radius * radius;
-        return area;
+        return Math.PI * radius * radius;
     }
-
 
     public int getRadius() {
         return radius;
     }
-
     public void setRadius(int radius) {
         if (radius > 0) {
             this.radius = radius;
